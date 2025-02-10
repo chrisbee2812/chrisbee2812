@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: inline-flex; /* Enables CSS flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    width: 100%;
+    height: 80px;
+    
+}
+
+header h1 {
+    flex: 2;
+    font-size: 2.5rem;
+    margin: 0rem 5rem 0rem 5rem;
+    text-align: center;
+}
+
+header h3 {
+    flex: 1;
+    font-size: 1.5rem;
+    margin: 0.5rem 5rem 0rem 5rem;
+    text-align: center;
+}
+
+header nav {
+    flex: 1;
+    font-size: 1.5rem;
+    margin: 0.3rem 5rem 0rem 5rem;
+}
+
+main {
+    display: flex; /* Enables CSS flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.theMessage {
+    display: flex;
+    height: 200px;
+    font-style: italic;
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.getMessage button {
+    flex: auto;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+}
+
+.informationBrief p {
+    text-align: center;
+    font-size: 1.2rem;
+}
