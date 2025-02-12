@@ -5,29 +5,44 @@
     <meta charset="utf-8">
     <meta name="description" content="Portfolio of web tools created by Chris Bicknell.">
     <link rel="stylesheet" href="css/mmstyles.css">
+    <link rel="stylesheet" href="css/cbstyles.css">
     <script src="scripts/mmscript.js" async></script>
     <link rel="icon" type="image/png" href="media/cbicon.png">
 </head>
-<body>
+<body class="w3-light-grey">
 
-    <header>
-        <h3>A Codecademy project</h3>
-        <h1>Mixed Messages</h1>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer -->
+<div class="w3-content" style="max-width:1400px">
+
+    <header class="w3-container w3-center w3-padding-32"> 
+        <div class="cb-column_flex">
+        <h1><b>MIXED MESSAGES</b></h1>
+        <p>A Codecademy project</p>
+        </div>
+        <div class="cb-row_flex">
+            <a href="index.html">
+            <button class="w3-button w3-padding-large w3-white w3-border"><b>HOME PAGE</b></button>
+            </a>
+        </div>
     </header>
 
-    <main>
-        <div class="theMessage">
+<!-- Grid -->
+<div class="w3-row">
+
+    <!-- entries -->
+    <div class="w3-col l8 s12">
+
+    <main class="cb_main">
+        <div class="cb_theMessage">
             <p id="message">
 
             </p>
         </div>
-        <div class="getMessage">
-            <button id="generate">Get Message</button>
+        <div class="cb_getMessage">
+            <button class="w3-button w3-padding-large w3-white w3-border" id="generate"><b>GET MESSAGE</b></button>
         </div>
-        <div class="informationBrief">
+        <div class="cb_informationBrief">
             <p>Click the button to obtain a random message.</p>
             <p>Random? Well, to a degree...</p>
             <p>
@@ -38,6 +53,16 @@
                 Terry Pratchett and Discworld</a>.</p>
             </div>
     </main>
+
+<!-- entries end -->
+</div>
+
+<!-- Grid end-->
+ </div>
+
+
+
+</div>
 
     <footer></footer>
     
