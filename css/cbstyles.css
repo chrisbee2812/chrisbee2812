@@ -1,29 +1,76 @@
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
-*,*:before,*:after {
-    box-sizing: inherit
+* {
+    box-sizing: inherit;
 }
 
 html {
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-    margin: 0
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+html,body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 article,aside,details,figcaption,figure,footer,menu,nav,section {
-    display: block
+    display: block;
 }
 
 header {
     display: flex; /* Enables CSS flexbox */
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
-    flex-direction: row;   
+    flex-direction: row;
+    color: black; 
+    font-size: 1.5rem; 
+    Padding: 2rem 1rem;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.cb-content {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cb_main {
@@ -41,6 +88,15 @@ header {
     text-align: center;
 }
 
+.cb-col {
+    width: 99%;
+    float: left;
+}
+
+.cb-width-66 {
+    width: 66.66666%
+}
+
 .cb-column_flex {
     display: flex; /* Enables CSS flexbox */
     justify-content: center; /* Centers horizontally */
@@ -52,6 +108,43 @@ header {
 .cb-row_flex {
     flex: 6;
 }
+
+.cb-card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+    color: #000;
+    background-color: #fff;
+}
+
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before, .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cb-padding-16 {
+    padding: 0.01em 16px;
+}
+
+.cb-button {
+    color: #000;
+    background-color: #fff;
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.cb-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
+
 
 summary {
     display: list-item
@@ -200,44 +293,10 @@ textarea {
     font: inherit
 }
 
-html,body {
-    font-family: Verdana,sans-serif;
-    font-size: 15px;
-    line-height: 1.5
-}
+
 
 html {
     overflow-x: hidden
-}
-
-h1 {
-    font-size: 36px
-}
-
-h2 {
-    font-size: 30px
-}
-
-h3 {
-    font-size: 24px
-}
-
-h4 {
-    font-size: 20px
-}
-
-h5 {
-    font-size: 18px
-}
-
-h6 {
-    font-size: 16px
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-weight: 400;
-    margin: 10px 0
 }
 
 hr {
@@ -252,10 +311,6 @@ img {
 
 a {
     color: inherit
-}
-
-.cb-float-right {
-    float: right;
 }
 
 /* button w3 used */
@@ -323,13 +378,6 @@ a {
     text-align: center
 }
 
-
-/* container w3 used row w3 used */
-.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before, .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after {
-    content: "";
-    display: table;
-    clear: both
-}
 
 /* col w3 used */
 .w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter {
