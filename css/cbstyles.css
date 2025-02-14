@@ -126,6 +126,7 @@ hr {
     overflow: hidden;
     text-decoration: none;
     text-align: center;
+    font-weight: bolder!important;
     cursor: pointer;
     white-space: nowrap;
     font: inherit;
@@ -138,9 +139,10 @@ hr {
 }
 
 .cb-entry-title-bar {
-    display: flex; 
+    display: grid; 
+    grid-template-columns: 5fr 2fr;;
     justify-content: space-around; 
-    align-items: center; 
+    align-items: center;
     padding: 1rem;
 }
 
@@ -150,11 +152,23 @@ hr {
     flex-direction: column;
 }
 
-.cb-expandable {
+/* .cb-expandable {
     display: grid;
     grid-template-rows: 0fr;
-}
+} */
 
 #btn-about-me-top {
+    display: none;
+}
+
+#div_aboutMe_to_hide {
+    display: none;
+}
+
+#btn-professional-top {
+    display: none;
+}
+
+#div_professional_to_hide {
     display: none;
 }
