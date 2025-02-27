@@ -111,7 +111,7 @@ const characters = [
     const place = places[Math.floor(Math.random() * places.length)];
     var whento = timelines[Math.floor(Math.random() * timelines.length)];
     var whoelse = "";    
-      const leng = Math.floor(Math.random() * characters.length) * (Math.floor(Math.random() * characters.length) * 1.5);
+      const leng = Math.floor(Math.random() * characters.length) * 2;
       if (leng > characters.length) {
         const aloneposition = Math.floor(Math.random() * alone.length);
         const themself = alone[aloneposition];
