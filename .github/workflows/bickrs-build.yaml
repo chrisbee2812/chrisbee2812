@@ -19,7 +19,7 @@ env:
 jobs:
 # Please do not rename this job
   build-project:
-    name: build chrisbee2812
+    name: build bickrs
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -37,5 +37,5 @@ jobs:
           branch-id: ${{ inputs.branch-id }}
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
-          config-file: .deploy-now/chrisbee2812/config.yaml
+          config-file: .deploy-now/bickrs/config.yaml
           action: upload
